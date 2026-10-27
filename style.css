@@ -1,0 +1,192 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+.header {
+    background-color: #101729;
+    color: white;
+    padding: 15px;
+}
+
+.menu {
+    background-color: #f4364b;
+    color: white;
+    padding: 15px;
+}
+
+.hero {
+    background-color: #4d87c4;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    min-height: 220px;
+}
+
+.side-menu {
+    display: none;
+}
+
+.main {
+    background-color: #24354d;
+    color: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty {
+    width: 25%;
+}
+
+.right-side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background-color: #bfe3e4;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extra {
+    background-color: #4cbd9c;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    background-color: #ffd36b;
+    padding: 35px;
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-menu {
+        display: none;
+    }
+
+    .hero {
+        height: 220px;
+    }
+
+    .content {
+        min-height: 350px;
+    }
+
+    .side-menu {
+        display: flex;
+        width: 22%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        width: 78%;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .right-side {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .image,
+    .extra {
+        width: 50%;
+        height: 110px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        order: 1;
+    }
+
+    .top-menu {
+        order: 2;
+    }
+
+    .hero {
+        order: 3;
+        height: 145px;
+    }
+
+    .content {
+        order: 4;
+        flex-direction: column;
+    }
+
+    .side-menu {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        height: 145px;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .right-side {
+        display: contents;
+    }
+
+    .banner {
+        order: 5;
+        padding: 25px;
+    }
+
+    .extra {
+        order: 6;
+        height: 105px;
+    }
+
+    .image {
+        order: 7;
+        height: 105px;
+    }
+}
